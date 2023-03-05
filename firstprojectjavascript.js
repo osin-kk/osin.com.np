@@ -1,10 +1,10 @@
 const images =document.getElementsByClassName("image");
 
-let globalIndex=0,
-    last ={x: 0, y: 0};
+let globalIndex = 0,
+    last ={ x: 0, y: 0};
 const activate = (image, x, y) => {
-  image.style.left = '${x}px' ;
-  image.style.top = '${y}px' ;
+  image.style.left = `${x}px` ;
+  image.style.top = `${y}px` ;
   
   image.dataset.status = "active";
   last = { x, y };
