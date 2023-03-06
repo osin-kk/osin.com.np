@@ -1,21 +1,22 @@
+/* Default styles */
 body {
   background-color: black;
   height: 100vh;
   margin: 0rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 @keyframes rotate {
   from {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
-  
+
   50% {
-    scale: 1 1.5;
+    transform: scale(1, 1.5);
   }
-  
+
   to {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 
@@ -26,7 +27,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
@@ -41,50 +42,97 @@ body {
   backdrop-filter: blur(12vmax);
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Space Mono', monospace;
-  font-size: (3rem, 10vw, 10rem);
+  font-size: clamp(3rem, 10vw, 10rem);
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
   margin: 0rem;
   position: absolute;
   left: 50%;
-  top: 40%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Space Mono', monospace;
-  font-size: (3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
   margin: 40px;
-  position: absolute;
   left: 45%;
   top: 50%;
-  translate: -50% -50%;
-  z-index: 3;
   text-align: left;
 }
 
 h3 {
-  font-family: 'Space Mono', monospace;
-  font-size: (3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
   margin: 80px;
-  position: absolute;
   left: 54%;
   top: 60%;
-  translate: -50% -50%;
-  z-index: 3;
   text-align: center;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #blob {
+    height: 50vmax;
+  }
 
+  h2 {
+    margin: 20px;
+    left: 50%;
+    top: 70%;
+    text-align: center;
+  }
 
+  h3 {
+    margin: 40px;
+    left: 50%;
+    top: 85%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #blob {
+    height: 70vmax;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: clamp(2rem, 10vw, 8rem);
+  }
+
+  h2 {
+    margin: 10px;
+    top: 60%;
+  }
+
+  h3 {
+    margin: 20px;
+    top: 75%;
+  }
+}
+
+@media (max-width: 320px) {
+  #blob {
+    height: 80vmax;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: clamp(1.5rem, 10vw, 6rem);
+  }
+
+  h2 {
+    margin: 10px;
+    top: 55%;
+  }
+
+  h3 {
+    margin: 10px;
+    top: 70%;
+  }
+}
