@@ -1,18 +1,23 @@
-body{
+/* Default styles */
+body {
   background-color: grey;
 }
-h1{
+
+h1, h2, h3 {
   color: white;
   font-size: 5rem;
   font-family: "Space Mono", monospace;
 }
-h2{
-  color: white;
-  font-size: 5rem;
-  font-family: "Space Mono", monospace;
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 3rem;
+  }
 }
-h3{
-  color: white;
-  font-size: 5rem;
-  font-family: "Space Mono", monospace;
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 2rem;
+  }
 }
