@@ -46,9 +46,9 @@ h1,
 h2,
 h3 {
   font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
+  font-size: clamp(2rem, 10vw, 10rem);
   color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
+  padding: 1rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
   margin: 0rem;
   position: absolute;
@@ -58,21 +58,21 @@ h3 {
 
 h1 {
   left: 50%;
-  top: 40%;
+  top: 20%;
   transform: translateX(-50%);
   text-align: left;
 }
 
 h2 {
   left: 50%;
-  top: 60%;
+  top: 40%;
   margin-left: 5%;
   text-align: left;
 }
 
 h3 {
   left: 50%;
-  top: 80%;
+  top: 60%;
   margin-right: 5%;
   text-align: left;
 }
