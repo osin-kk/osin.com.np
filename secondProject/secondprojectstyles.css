@@ -53,6 +53,7 @@ h1 {
   top: 20%;
   translate: -50% -50%;
   z-index: 3;
+  text-align: left;
 }
 h2 {
   font-family: 'Space Mono', monospace;
@@ -66,6 +67,7 @@ h2 {
   top: 50%;
   translate: -50% -50%;
   z-index: 3;
+  text-align: left;
 }
 h3 {
   font-family: 'Space Mono', monospace;
@@ -79,5 +81,6 @@ h3 {
   top: 75%;
   translate: -50% -50%;
   z-index: 3;
+  text-align: left;
 }
   
