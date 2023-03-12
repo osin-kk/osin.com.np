@@ -56,7 +56,7 @@ h1 {
 }
 h2 {
   font-family: 'Space Mono', monospace;
-  font-size: large;
+  font-size: medium;
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
