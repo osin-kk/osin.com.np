@@ -4,45 +4,36 @@
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="firstProject.html">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio! Here you'll find a showcase of some of my latest projects.</p>
-      </section>
-      <section>
-        <h2>Project 1</h2>
-        <img src="project1.jpg" alt="Project 1">
-        <p>Here lies the description of my first project.</p>
-        <a href="#">View Project</a>
-      </section>
-      <section>
-        <h2>Project 2</h2>
-        <img src="project2.jpg" alt="Project 2">
-        <p>Once I create my second project itll be showcased here.</p>
-        <a href="secondProject/secondproject.html">View Project</a>
-      </section>
-      <section>
-        <h2>Project 3</h2>
-        <img src="project3.jpg" alt="Project 3">
-        <p>3rd Installment of my project.</p>
-        <a href="#">View Project</a>
-      </section>
-      <script src="index.js"></script>
-    </main>
-    <footer>
-      <p>&copy; 2023 Osin Khatiwada</p>
-    </footer>
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+      <h1 class="main-title">My <span class="thin">Portfolio</span></h1>
+      
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="firstProject.html">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section>
+          <h1>Welcome to my portfolio!</h1>
+          <p>Here you'll find a showcase of some of my latest projects.</p>
+        </section>
+        <!-- Add more sections for each project -->
+      </main>
+      
+      <footer>
+        <p>&copy; 2023 Osin Khatiwada</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
