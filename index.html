@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Effect -->
+  <div id="bg-effect">
+    <canvas id="demo-canvas"></canvas>
+  </div>
+
+  <!-- Fixed Navigation -->
+  <header id="fixed-nav">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <section id="home">
+      <h1 class="main-title">My <span class="thin">Portfolio</span></h1>
+    </section>
+
+    <section id="about">
+      <h1>Welcome to my portfolio!</h1>
+      <p>Here you'll find a showcase of some of my latest projects.</p>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="portfolio">
+      <div class="project-container">
+        <!-- Projects will be dynamically populated here -->
+        <button class="project-btn" id="prev-project">Previous</button>
+        <button class="project-btn" id="next-project">Next</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <!-- Contact form or details -->
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Osin Khatiwada</p>
+    </footer>
+  </div>
+
+</body>
+</html>
