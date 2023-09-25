@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#guess-input {
+    width: 50px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#guess-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#attempts-left {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
