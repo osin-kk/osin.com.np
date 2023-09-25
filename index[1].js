@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectContainer = document.querySelector(".project-container");
 
   // Define the project URL
-  const projectUrl = "osin.com.np/newp.html";
+  const projectUrl = "/newp.html";
 
   // Create a link element for the project
   const projectLink = document.createElement("a");
