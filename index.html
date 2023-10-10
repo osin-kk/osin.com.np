@@ -1,59 +1,55 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- Background Effect -->
-  <div id="bg-effect">
-    <canvas id="demo-canvas"></canvas>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Fixed Navigation -->
-  <header id="fixed-nav">
-    <nav>
-      <ul>
-        <li><a href="firstProject.html">Home</a></li>
-        <li><a href="firstProject.html">About</a></li>
-        <li><a href="secondProject/secondproject.html">Portfolio</a></li>
-        <li><a href="secondProject/secondproject.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <div id="main-content">
     <section id="home">
-      <h1 class="main-title">My <span class="thin">Portfolio</span></h1>
+        <h1>Hey There, I'm [Your Name]</h1>
+        <p>[Short bio]</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Selected Projects</h2>
+        <!-- Example project -->
+        <div class="project">
+            <img src="path_to_project_image.jpg" alt="Project Name">
+            <h3>Project Name</h3>
+            <p>Project description.</p>
+        </div>
     </section>
 
     <section id="about">
-      <h1>Welcome to my portfolio!</h1>
-      <p>Here you'll find a showcase of some of my latest projects.</p>
+        <!-- Your about content here -->
     </section>
 
-    <!-- Project Showcase -->
-    <section id="portfolio">
-      <div class="project-container">
-        <!-- Projects will be dynamically populated here -->
-        <button class="project-btn" id="prev-project">Previous</button>
-        <button class="project-btn" id="next-project">Next</button>
-      </div>
+    <section id="testimonial">
+        <!-- Testimonials here -->
     </section>
 
     <section id="contact">
-      <!-- Contact form or details -->
+        <!-- Contact form or details here -->
     </section>
-    <button class= "button"> "Click me" </button>
-    <footer>
-      <p>&copy; 2023 Osin Khatiwada</p>
-    </footer>
-  </div>
-  <script src="index[1].js"></script>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
