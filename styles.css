@@ -278,8 +278,8 @@ h3 {
 
 .screen > .screen-content > .screen-user > .name {
   position: relative;
-  font-size: 4.25rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 .screen > .screen-content > .screen-user > .name:before,
