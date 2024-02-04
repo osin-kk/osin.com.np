@@ -1,3 +1,12 @@
+li{ 
+  position:sticky;
+  top:0;
+  background-color: black;
+  
+}
+li .active{
+  background-color: aqua;
+}
 body {
   background-color: black;
   height: 100vh;
